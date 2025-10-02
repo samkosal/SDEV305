@@ -1,3 +1,12 @@
+/* The asterisk is the universal selector
+ * box-sizing: border-box; ensures that the
+ * element's content, padding, and border
+ * are all included in the width and height.
+ * Useful for responsive layouts.
+ */
+* {
+    box-sizing: border-box;
+}
 body {
     background-color: darkred;
     margin: 0;
@@ -46,4 +55,11 @@ legend {
     padding: .5rem .75rem;
     font-weight: 600;
     text-decoration: none;
+}
+input[type="text"], input[type="email"], textarea, select {
+    width: 100%;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+    margin: 0rem 0rem 1rem 0rem;
+    padding: .75rem;
 }
